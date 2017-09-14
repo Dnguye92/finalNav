@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CR Auto Nav</title>
+	<link rel="icon" href="img/CR-logo.ico">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+	<div class="container header">
+		<div class="row">
+			<div class="col-xs-12">
+				<img class="logo" src="img/nav-logo.png">
+				<h1>Nav Generator</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				<h2>How it works</h2>
+				<ol>
+					<li>Enter the number of level-1 categories you will need and then click the "Generate" button</li>
+					<li>Once the categories are generated enter the name of the level-1 category and the number of level-2 categories that you will need. Clicking the "Generate level-2" button will create the respective amount of level-2 categories that you want</li>
+					<li>Fill out all of the information for level-2 categories. Once you are finished with that - click the "Parse HTML" button which will output the raw HTML code that you need</li>
+				</ol>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 generate_container">
+					<form class="form-group">
+						<label>How many Level-1 Categories do you need?</label>
+						<input type="text" class="form-control" id="category_amount" placeholder="Category Amount">
+						<button type="button" class="btn btn-default" id="generate_btn">Generate</button>
+						<button type="button" class="btn btn-primary" id="parse_btn">Parse HTML</button>
+						<button type="button" class="btn btn-danger" id="reset_btn">Reset</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-7" id="generated_inputs">
+
+			</div>
+			<div class="col-xs-5" id="generated_json">
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12" id="container_parsed-html">
+
+			</div>
+		</div>
+	</div>
+	
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -36,19 +36,16 @@ body {
 }
 
 #generated_inputs {
-	.list_container {
+	.inputContainer {
 		border: 1px solid lightgrey;
 		border-radius: 3px;
 		margin: 5px;
 		padding: 5px;
-		.level_1 {
+		.level_1, .level_2 {
 			display: inline-block;
 			margin-bottom: 5px;
 			margin-top: 5px;
 			width: 45%;
-		}
-		.level_2-btn {
-			margin: 5px 0;
 		}
 		input {
 			margin: 5px 0;
